@@ -105,6 +105,13 @@ body
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    transition: width 0.5s, left 0.5s;
+}
+
+.main .topbar.active
+{
+    width: calc(100% - 0px);
+    left: 0px;  
 }
 
 .main .topbar .logo
