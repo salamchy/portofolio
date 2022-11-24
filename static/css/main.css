@@ -1,7 +1,4 @@
-
-
 @import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
-
 *
 {
     margin: 0;
@@ -9,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+
 :root
 {
     --black: #333;
@@ -16,15 +14,18 @@
     --white: #fff;
     --white2: #fff;
 }
+
 body
 {
     overflow-x: hidden;
 }
+
 .container
 {
     position: relative;
     width: 100%;
 }
+
 .navigation
 {
     position: fixed;
@@ -36,7 +37,14 @@ body
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transition: width 0.5s;
 }
+
+.navigation.active
+{
+    width: 0;
+}
+
 .navigation ul
 {
     position: relative;
@@ -45,12 +53,14 @@ body
     width: 100%;
     padding: 20px 40px;
 }
+
 .navigation ul li
 {
     position: relative;
     width: 100%;
     list-style: none;
 }
+
 .navigation ul li a
 {
     position: relative;
@@ -66,10 +76,12 @@ body
     letter-spacing: 2px;
     opacity: 0.5;
 }
+
 .navigation ul li a:hover
 {
     opacity: 1;
 }
+
 .main
 {
     position: absolute;
@@ -78,6 +90,7 @@ body
     background: var(--white);
     min-height: 100vh;
 }
+
 .main .topbar
 {
     position: fixed;
@@ -93,6 +106,7 @@ body
     align-items: center;
     z-index: 10000;
 }
+
 .main .topbar .logo
 {
     color:var(--black);
@@ -102,6 +116,7 @@ body
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .main .topbar .toggle
 {
     position: relative;
