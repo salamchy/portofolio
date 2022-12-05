@@ -89,6 +89,13 @@ body
     left: 300px;
     background: var(--white);
     min-height: 100vh;
+    transition: width 0.5s, left 0.5s;
+}
+
+.main.active
+{
+    width: calc(100% - 0px);
+    left: 0px; 
 }
 
 .main .topbar
@@ -97,7 +104,7 @@ body
     top: 0;
     width: calc(100% - 300px);
     left: 300px;
-    background: var(--white2);
+    background: var(--white2); 
     border-bottom: 1px solid rgba(0,0,0,0.05);
     height: 60px;
     padding: 0 40px;
@@ -237,4 +244,42 @@ p
 {
     background: var(--black2);
     color: #fff;
+}
+
+.adjust
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 0 40px;
+    padding-top: 80px;
+    background: var(--white);
+    color: var(--black);
+    display: inline-block;
+}
+
+.title
+{
+    width: 100%; 
+    text-align: center;
+}
+
+.title h2
+{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.title h2::before
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 50px;
+    height: 1px;
+    background: var(--black);
 }
