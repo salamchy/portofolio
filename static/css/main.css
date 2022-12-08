@@ -283,3 +283,26 @@ p
     height: 1px;
     background: var(--black);
 }
+
+.about .content
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about .content .textBox
+{
+    width: 49px;
+    min-width: 49%;
+}
+
+.about .content .imgBx
+{
+    margin-left: 40px;
+}
+
+.about .content .imgBx img
+{
+    max-width: 100%;
+}
